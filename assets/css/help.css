@@ -1,0 +1,35 @@
+/* Ronak SCSS – Help/Docs styles */
+/* Keep it lightweight and consistent with the design language */
+
+.rs-doc { display: grid; gap: 16px; }
+.rs-doc__intro { display: grid; gap: 10px; }
+.rs-doc__title { font-size: 20px; font-weight: 700; color: white !important}
+.rs-doc__subtitle { color: var(--muted); }
+.rs-doc__quicklinks { display: inline-flex; flex-wrap: wrap; gap: 8px; }
+.rs-doc__sep { border: 0; border-top: 1px dashed rgba(48,54,61,.5); margin: 4px 0 0; }
+
+.rs-doc__section { display: grid; gap: 10px; }
+.rs-doc__h { font-size: 16px; font-weight: 700; color: white;}
+.rs-doc__h4 { font-size: 14px; font-weight: 600; color: white;}
+.rs-doc__p { margin: 0; color: var(--text); }
+.rs-doc__list { margin: 0; padding-left: 18px; display: grid; gap: 6px; }
+.rs-doc__steps { margin: 0; padding-left: 18px; display: grid; gap: 8px; }
+
+.rs-doc__grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+@media (max-width: 980px) { .rs-doc__grid { grid-template-columns: 1fr; } }
+.rs-doc__card {
+  display: grid; gap: 8px; padding: 12px;
+  background: rgba(22,27,34,.45); border: 1px solid rgba(48,54,61,.55); border-radius: var(--radius);
+}
+
+.rs-doc__code {
+  display: grid; grid-template-columns: 1fr auto; gap: 8px; align-items: center;
+  background: rgba(31,36,45,.55); border: 1px solid rgba(48,54,61,.6); border-radius: var(--radius-sm);
+  padding: 8px 10px; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+.rs-doc__code code { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.rs-doc__copy { height: 32px !important; }
+
+.rs-doc__note { font-size: 12px; color: var(--muted); }
+.rs-doc__faq { background: rgba(31,36,45,.35); border: 1px solid rgba(48,54,61,.45); border-radius: var(--radius-sm); padding: 8px 10px; }
+.rs-doc__faq summary { cursor: pointer; font-weight: 600; }
